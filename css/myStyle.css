@@ -42,7 +42,7 @@ a{
 	width: 2rem;
 }
 header{
-	text-align: center;
+	margin-bottom: 2rem;text-align: center;
 }
 h1{
 	font-size: 3.5rem;
@@ -59,9 +59,31 @@ h5{
 	text-align: center;
 	width: auto;
 }
-
+article{
+	margin: 2rem 0;}
+footer{margin-top: 2rem;}
 .form label{}
 input, textarea{display: block; margin: 1% 0; width: 300px;}
+textarea{
+    resize: none;
+}
+
+
 .text-center{
 	text-align: center;
 }
+.row{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	height: auto;
+	width: auto;
+}
+.col-1{width: 6.33%;}.col-2{width: 14.66%;}.col-3{width: 23%;}
+.col-4{width: 31.33%;}.col-5{width: 36.66%;}.col-6{width: 48%;}
+.col-7{width: 56.33%;}.col-8{width: 64.66%;}.col-9{width: 73%;}
+.col-10{width: 81.33%;}.col-11{width: 89.66%;}.col-12{width: 98%;}
+.col-nav{box-sizing: border-box;height: auto;}
+.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{box-sizing: border-box;height: auto;margin: 1%;padding: 1%;}
+.col-center{justify-content: center;margin: 0 auto;-webkit-justify-content: center;text-align: center;}
