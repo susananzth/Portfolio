@@ -150,20 +150,11 @@ article{
 	padding: 1rem;
 	width: 90%;
 }
-.frontend h6, .backend h6{
-	padding-bottom: 0.5rem;
-}
 .frontend{
 	margin-bottom: 1rem;
 }
-.frontend div figure{
-	width: 33%;
-	margin: 0 auto;
-	text-align: center;
-	vertical-align: top;
-}
-.backend div figure{
-	width: 33%;
+.frontend div figure, .backend div figure{
+	width: 30%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -171,6 +162,7 @@ article{
 	background: #222;
 	border-radius: 50%;
 	height: 3rem;
+	margin: 0.7rem 0 0.4rem 0;
 	width: 3rem;
 }
 .tools{
@@ -190,7 +182,7 @@ article{
 	width: 3rem;
 }
 footer{
-	background: #adadad;
+	background: #adadad !important;
 	padding: 2rem;
 }
 .form{
@@ -202,6 +194,8 @@ form label{
 	display: block;
 }
 input, textarea{
+	font-size: inherit;
+    font-family: inherit;
 	margin: 1% 0;
 	width: 100%;
 }
@@ -209,7 +203,9 @@ textarea{
     resize: none;
 }
 .contact{
-	
+	margin: 0 auto;
+    padding: 1rem;
+    width: 80%;
 }
 
 .flex-box{
@@ -226,14 +222,64 @@ textarea{
 }
 
 @media (min-width: 768px) {
-	article{
+	header, article, footer{
 		padding: 3rem;
+	}
+	.services:nth-child(odd){
+	padding-right: 1rem;
+	}
+	.services:nth-child(even){
+		padding-left: 1rem;
+	}
+	.services:nth-child(3), .services:nth-child(4){
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 	.preview{
 		width: 33.33%;
 	}
+	.frontend div figure, .backend div figure{
+    	width: 22%;
+    }
+    .form, .contact {
+    	margin: 0 auto;
+        width: 40%;
+	}
+	.contact{
+		padding: 2rem 1rem;
+	}
 }
- 
-@media (min-width: 1024px) { }
+@media (min-width: 1024px) {
+	body{
+		font-size: 20px;
+	}
+	header, article, footer{
+		padding: 4rem 5rem;
+	}
+	nav{
+		height: 4rem;
+	}
+	.logo, .menu{
+		height: 3rem;
+		width: 3rem;
+	}
+	.name{
+		font-size: 3rem;
+    	left: 4rem;
+	}
+	h1{
+		font-size: 4.5rem;
+	}
+	h5{
+		font-size: 2.2rem;
+	}
+	h6{
+		font-size: 1.7rem;
+	}
+}
 
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+	header, article, footer{
+		padding: 4rem 7rem;
+	}
+}
