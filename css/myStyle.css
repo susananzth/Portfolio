@@ -89,8 +89,20 @@ article{
     width: 90%;
 }
 .services{
-	text-align: center;width: 50%;vertical-align: top}
-.services:nth-child(even){}
+	text-align: center;
+	width: 50%;
+	vertical-align: top}
+
+.services:nth-child(odd){
+	padding-right: 0.2rem;
+}
+.services:nth-child(even){
+	padding-left: 0.2rem;
+}
+.services:nth-child(3), .services:nth-child(4){
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+}
 .services-love{
 	display: block;
 	margin: 0 auto;
@@ -137,7 +149,9 @@ article{
 	margin-top: 1rem;
 	padding: 1rem;
 	width: 90%;
-
+}
+.frontend h6, .backend h6{
+	padding-bottom: 0.5rem;
 }
 .frontend{
 	margin-bottom: 1rem;
@@ -177,17 +191,25 @@ article{
 }
 footer{
 	background: #adadad;
-	padding: 2rem 0;
+	padding: 2rem;
 }
-.form label{
+.form{
+	margin: 0 auto;
+	padding: 1rem;
+	width: 80%;
+}
+form label{
 	display: block;
 }
 input, textarea{
 	margin: 1% 0;
-	width: 300px;
+	width: 100%;
 }
 textarea{
     resize: none;
+}
+.contact{
+	
 }
 
 .flex-box{
