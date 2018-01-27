@@ -3,6 +3,10 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
 }
 
 html {
@@ -49,13 +53,14 @@ a{
 	width: 2rem;
 }
 header{
-	margin-bottom: 2rem;padding: 2rem 0; text-align: center;
+	padding: 2rem 0;
+	text-align: center;
 }
 h1{
-	font-size: 3.5rem;
+	font-size: 3rem;
 	}
 h5{
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 }
 h6{
 	font-size: 1.3rem;
@@ -92,23 +97,12 @@ article{
 	text-align: center;
 	width: 90%;
 	}
-.responsive{
+.img-about{
 	background: #222;
 	border-radius: 50%;
 	margin: 0 auto;
 	height: 3rem;
 	width: 3rem;
-}
-.galery{
-	margin: 0 auto;
-	width: 90%;
-	background: #adadad;}
-.preview{
-	background: #888;
-	border: #222 1px solid;
-	box-sizing: border-box;
-	text-align: center; width: 50%;height: 100px;
-	/*vertical-align: top;*/
 }
 .nav-portfolio{
 	margin: 0 auto;
@@ -120,6 +114,19 @@ article{
 	box-sizing: border-box;
 	padding: 0.5rem;
 }
+.galery{
+	margin: 0 auto;
+	width: 90%;
+	background: #adadad;}
+.preview{
+	background: #888;
+	border: #222 1px solid;
+	box-sizing: border-box;
+	height: 100px;
+	text-align: center;
+	width: 50%;
+	/*vertical-align: top;*/
+}
 .skills{
 	background: #adadad;
 }
@@ -127,6 +134,7 @@ article{
 .frontend, .backend{
 	background: #fff;
 	margin: 0 auto;
+	margin-top: 1rem;
 	padding: 1rem;
 	width: 90%;
 
@@ -135,13 +143,13 @@ article{
 	margin-bottom: 1rem;
 }
 .frontend div figure{
-	width: 22%;
+	width: 33%;
 	margin: 0 auto;
 	text-align: center;
 	vertical-align: top;
 }
 .backend div figure{
-	width: 22%;
+	width: 33%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -153,6 +161,7 @@ article{
 }
 .tools{
 	margin: 0 auto;
+	margin-top: 1rem;
 	width: 90%;
 }
 .tool{
@@ -168,11 +177,15 @@ article{
 }
 footer{
 	background: #adadad;
-	margin-top: 2rem;
 	padding: 2rem 0;
 }
-.form label{display: block;}
-input, textarea{margin: 1% 0; width: 300px;}
+.form label{
+	display: block;
+}
+input, textarea{
+	margin: 1% 0;
+	width: 300px;
+}
 textarea{
     resize: none;
 }
@@ -190,10 +203,15 @@ textarea{
 	text-align: center;
 }
 
-.col-1{width: 6.33%;}.col-2{width: 14.66%;}.col-3{width: 23%;}
-.col-4{width: 31.33%;}.col-5{width: 36.66%;}.col-6{width: 48%;}
-.col-7{width: 56.33%;}.col-8{width: 64.66%;}.col-9{width: 73%;}
-.col-10{width: 81.33%;}.col-11{width: 89.66%;}.col-12{width: 98%;}
-.col-nav{box-sizing: border-box;height: auto;}
-.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{box-sizing: border-box;display: inline-block; height: auto;margin: 1%;padding: 1%;}
-.col-center{justify-content: center;margin: 0 auto;-webkit-justify-content: center;text-align: center;}
+@media (min-width: 768px) {
+	article{
+		padding: 3rem;
+	}
+	.preview{
+		width: 33.33%;
+	}
+}
+ 
+@media (min-width: 1024px) { }
+
+@media (min-width: 1200px) { }
