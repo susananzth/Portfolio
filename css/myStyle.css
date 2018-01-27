@@ -132,7 +132,6 @@ article{
 	width: 22%;
 	margin: 0 auto;
 	text-align: center;
-	vertical-align: top;
 }
 .img-skill{
 	background: #222;
@@ -140,7 +139,22 @@ article{
 	height: 3rem;
 	width: 3rem;
 }
-footer{margin-top: 2rem;}
+.tool{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.img-tool{
+	background: #222;
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+}
+footer{
+	background: #adadad;
+	margin-top: 2rem;
+	padding: 2rem 0;
+}
 .form label{display: block;}
 input, textarea{margin: 1% 0; width: 300px;}
 textarea{
