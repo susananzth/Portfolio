@@ -42,7 +42,7 @@ a{
 	width: 2rem;
 }
 header{
-	margin-bottom: 2rem;text-align: center;
+	margin-bottom: 2rem;padding: 2rem 0; text-align: center;
 }
 h1{
 	font-size: 3.5rem;
@@ -68,15 +68,50 @@ h1, h5, h6{
 article{
 	margin: 2rem 0;
 }
-.services{display: inline-block;width: 49.5%;text-align: center;}
+.about-me{
+	background: #adadad;
+	padding: 2rem 0;
+}
+.container-services{
+	display: flex;
+    display: inline-flex;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.services{
+	
+	text-align: center;width: 50%;vertical-align: top}
 .services:nth-child(even){}
 .services-love{display: block; text-align: center;}
 .responsive{
 	background: #222;
 	border-radius: 50%;
-	display: inline-block;
+	margin: 0 auto;
 	height: 3rem;
 	width: 3rem;
+}
+.galery{
+	display: flex;
+    display: inline-flex;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 1rem;
+	width: 80%;
+	background: #adadad;}
+.preview{
+	background: #888;
+	border: #222 1px solid;
+	box-sizing: border-box;
+	text-align: center; width: 50%;height: 100px;
+	/*vertical-align: top;*/
 }
 footer{margin-top: 2rem;}
 .form label{display: block;}
