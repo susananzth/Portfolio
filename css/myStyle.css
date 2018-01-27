@@ -73,17 +73,9 @@ article{
 	padding: 2rem 0;
 }
 .container-services{
-	display: flex;
-    display: inline-flex;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    flex-wrap: wrap;
     margin-top: 1rem;
 }
 .services{
-	
 	text-align: center;width: 50%;vertical-align: top}
 .services:nth-child(even){}
 .services-love{display: block; text-align: center;}
@@ -95,15 +87,7 @@ article{
 	width: 3rem;
 }
 .galery{
-	display: flex;
-    display: inline-flex;
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox; /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Chrome */
-    flex-wrap: wrap;
 	margin: 0 auto;
-	margin-top: 1rem;
 	width: 80%;
 	background: #adadad;}
 .preview{
@@ -113,6 +97,16 @@ article{
 	text-align: center; width: 50%;height: 100px;
 	/*vertical-align: top;*/
 }
+.nav-portfolio{
+	margin: 0 auto;
+	margin-top: 1rem;
+	width: 80%;
+}
+.nav-portfolio a{
+	border: #222 1px solid;
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
 footer{margin-top: 2rem;}
 .form label{display: block;}
 input, textarea{margin: 1% 0; width: 300px;}
@@ -120,7 +114,15 @@ textarea{
     resize: none;
 }
 
-
+.flex-box{
+	display: flex;
+    display: inline-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
 .text-center{
 	text-align: center;
 }
