@@ -107,6 +107,39 @@ article{
 	box-sizing: border-box;
 	padding: 0.5rem;
 }
+.skills{
+	background: #adadad;
+	padding: 2rem 0;
+}
+
+.frontend, .backend{
+	background: #fff;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 80%;
+
+}
+.frontend{
+	margin-bottom: 1rem;
+}
+.frontend div figure{
+	width: 22%;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: top;
+}
+.backend div figure{
+	width: 22%;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: top;
+}
+.img-skill{
+	background: #222;
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+}
 footer{margin-top: 2rem;}
 .form label{display: block;}
 input, textarea{margin: 1% 0; width: 300px;}
