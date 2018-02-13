@@ -57,7 +57,7 @@ a{
 .menu{
 	background: #fff;
 	position: absolute;
-	right: 0.75rem;
+	right: 1rem;
 	top: 0.75rem;
 }
 .menu:before {
@@ -93,6 +93,7 @@ h1, h5, h6{
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
+	margin-top: 0.75rem; 
 	padding: 0.8rem;
 	text-align: center;
 	width: auto;
