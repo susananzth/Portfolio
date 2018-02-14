@@ -10,16 +10,34 @@
 	<title>Susana's portfolio | FrontEnd & BackEnd Developer</title>
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
 	<link rel="icon" type="text/css" href="img/favicon2.ico"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/myScript.js"></script>
+    
 </head>
 <body>
-	<nav id="nav">
+	<nav id="nav" class="nav">
 		<a href="#" class="smoothScroll">
 			<figure class="logo">
 				<img src="img/icon.png"/>
 			</figure>
 			<span class="name">Susana Piñero</span>
 		</a>
-		<a href="#" class="menu"></a>
+		<span class="menu" onclick="openNav()"></span>
+
+		<div id="sideNav" class="sideNav">
+			<span class="closebtn" onclick="closeNav()"></span>
+			<div class="vertical">
+				<!--<a href="#">About</a> -->
+				<a href="#services">Services</a>
+				<a href="#skills">Skills</a>
+				<a href="#tools">Tools I use</a>
+				<a href="#contact">Contact</a>
+			</div>
+			
+		</div>
+
 	</nav>
 	<header>
 		<h1>Susana Piñero</h1>
@@ -27,7 +45,7 @@
 		<!-- <a href="#portfolio" class="btn-to-portfolio">My portfolio</a> -->
 	</header>
 	<section>
-		<article class="about-me">
+		<article id="services" class="about-me pos">
 			<!-- <h5>About me</h5> -->
 			<div class="container-services flex-box">
 				<div class="services">
@@ -81,7 +99,7 @@
 			</div>
 		</article>
 		-->
-		<article class="skills">
+		<article id="skills" class="skills">
 			<h5>Skills</h5>
 			<div class="frontend">
 				<h6>Frontend</h6>
@@ -98,6 +116,7 @@
 						<img src="" class="img-skill icons-skills bootstrap">
 						<figcaption>Bootstrap</figcaption>
 					</figure>
+					<!--
 					<figure>
 						<img src="" class="img-skill">
 						<figcaption>Materialize</figcaption>
@@ -105,7 +124,7 @@
 					<figure>
 						<img src="" class="img-skill">
 						<figcaption>Material Design</figcaption>
-					</figure>
+					</figure> -->
 					<figure>
 						<img src="" class="img-skill icons-skills javascript">
 						<figcaption>Javascript</figcaption>
@@ -114,6 +133,7 @@
 						<img src="" class="img-skill icons-skills jquery">
 						<figcaption>jQuery</figcaption>
 					</figure>
+					<!--
 					<figure>
 						<img src="" class="img-skill icons-skills react-js">
 						<figcaption>React JS</figcaption>
@@ -121,9 +141,10 @@
 					<figure>
 						<img src="" class="img-skill icons-skills angular">
 						<figcaption>Angular</figcaption>
-					</figure>
+					</figure> -->
 				</div>
 			</div>
+			<!--
 			<div class="backend">
 				<h6>Backend</h6>
 				<div class="flex-box">
@@ -144,9 +165,9 @@
 						<figcaption>PostgreSQL</figcaption>
 					</figure>
 				</div>
-			</div>
+			</div> -->
 		</article>
-		<article class="tools-use">
+		<article id="tools" class="tools-use">
 			<h5>Tools I use</h5>
 			<div class="tools flex-box">
 				<figure class="tool">
@@ -160,7 +181,7 @@
 			</div>
 		</article>
 	</section>
-	<footer>
+	<footer id="contact">
 		<h5>Contact</h5>
 		<div class="flex-box">
 			<div class="form">
@@ -186,15 +207,14 @@
 			</address>	
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/jQuery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
-	<script type="text/javascript" src="jswaypoints.min.js"></script>
-	<script type="text/javascript" src="js/myScript.js"></script>
-	<script type="text/javascript">
-		$('a.smoothScroll').smoothScroll({
-			offset: -80,
-			scrollTarget: $(this).val()
-		});
+	<script>
+		function openNav() {
+	    document.getElementById("sideNav").style.width = "100%";
+	    }
+
+	    function closeNav() {
+	        document.getElementById("sideNav").style.width = "0";
+	    }
 	</script>
 </body>
 </html>

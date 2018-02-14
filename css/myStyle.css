@@ -77,6 +77,7 @@ a{
 
 .menu{
 	background: #fff;
+	cursor:pointer;
 	position: absolute;
 	right: 1rem;
 	top: 0.75rem;
@@ -86,11 +87,39 @@ a{
   font-family: 'icomoon' !important;
   font-size: 1.5rem;
   margin: 0 auto;
-}
-.menu-cross:before {
+} /*menu-cross*/
+.closebtn:before {
   content: "\ea0f";
   font-family: 'icomoon' !important;
   font-size: 1.5rem;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(226,200,200,0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    text-decoration: underline;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 header{
 	background-color: #f5ecef;
@@ -102,6 +131,7 @@ h1{
 	}
 h5{
 	font-size: 1.5rem;
+	padding-bottom: 1rem; 
 }
 h6{
 	font-size: 1.3rem;
@@ -128,13 +158,16 @@ article{
 }
 .container-services{
 	margin: 0 auto;
+	padding-top: 1.5rem;
     width: 90%;
 }
 .services{
+	padding: 1rem;
 	text-align: center;
-	width: 50%;
-	vertical-align: top}
-
+	width: 25%;
+	vertical-align: top
+}
+/*
 .services:nth-child(odd){
 	padding-right: 0.3rem;
 }
@@ -145,6 +178,7 @@ article{
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
+*/
 .services-love{
 	display: block;
 	margin: 0 auto;
@@ -204,7 +238,7 @@ article{
 	/*background: #d6b5c1;*/
 }
 .frontend, .backend{
-	border: #4c4c4c 1px solid;
+	background: #fff;
 	margin: 0 auto;
 	margin-top: 1rem;
 	padding: 1rem;
@@ -274,10 +308,13 @@ article{
 	/*background: #c39caa;*/
 }
 .tools{
+	background: #fff;
 	margin: 0 auto;
 	margin-top: 1rem;
+	padding: 1.5rem;
 	width: 90%;
 }
+
 .tool{
 	margin: 0 auto;
 	text-align: center;
@@ -373,9 +410,6 @@ textarea{
 	footer{
 		padding: 3rem;
 	}
-	.services{
-		padding: 1rem;
-	}
 	.preview{
 		width: 33.33%;
 	}
@@ -410,10 +444,10 @@ textarea{
 		font-size: 2.5rem;
 		margin: 0 auto;
 	}
-	.menu-cross:before {
+	.closebtn:before {
 		content: "\ea0f";
 		font-family: 'icomoon' !important;
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
 	.name{
 		font-size: 3rem;

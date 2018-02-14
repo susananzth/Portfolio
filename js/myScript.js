@@ -5,7 +5,7 @@ $(function(){
 	   });
        
        // Waypoints
-       $('.post_article').waypoint(  
+       $('.about-me').waypoint(  
         function(direction) {
         if (direction ==='down') {            
             var wayID = $(this).attr('id');            
@@ -14,7 +14,7 @@ $(function(){
             var wayID = $(previous).attr('id');                    
         }
             $('.current').removeClass('current');
-            $('#main_nav a[href=#'+wayID+']').addClass('current');
+            $('#nav a[href=#'+wayID+']').addClass('current');
         }, { offset: '40%' });
        
        
@@ -34,5 +34,15 @@ $(function(){
     stickyNav(); 
        $(window).scroll(function() {
             stickyNav();  
-        });  
+        });
+
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    } 
     });
