@@ -1,6 +1,6 @@
 
 <!DOCTYPE html/>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="Description" content="Susana's portfolio, Web developer. I show you my frontend and backend jobs, my skills, the tools I use and the way to contact me."/>
@@ -9,13 +9,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 	<title>Susana's portfolio | FrontEnd & BackEnd Developer</title>
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<link rel="icon" type="text/css" href="img/favicon2.ico"/>
 </head>
 <body>
-	<nav>
-		<a href="#">
+	<nav id="nav">
+		<a href="#" class="smoothScroll">
 			<figure class="logo">
-				<img src=""/>
+				<img src="img/icon.png"/>
 			</figure>
 			<span class="name">Susana Piñero</span>
 		</a>
@@ -24,11 +24,11 @@
 	<header>
 		<h1>Susana Piñero</h1>
 		<h5>Web/Mobile Developer</h5>
-		<a href="#portfolio" class="btn-to-portfolio">My portfolio</a>
+		<!-- <a href="#portfolio" class="btn-to-portfolio">My portfolio</a> -->
 	</header>
 	<section>
 		<article class="about-me">
-			<h5>About me</h5>
+			<!-- <h5>About me</h5> -->
 			<div class="container-services flex-box">
 				<div class="services">
 				<figure class="img-about icons-me speed"></figure>
@@ -57,6 +57,7 @@
 				<p>Feel free to ask me any <a href="#contact-form">questions.</a><br/>I can help you in your web project in everything you need.</p>
 			</div>
 		</article>
+		<!--
 		<article id="portfolio">
 			<h5>Portfolio</h5>
 			<div class="nav-portfolio flex-box">
@@ -79,6 +80,7 @@
 				</figure>
 			</div>
 		</article>
+		-->
 		<article class="skills">
 			<h5>Skills</h5>
 			<div class="frontend">
@@ -183,8 +185,16 @@
 				
 			</address>	
 		</div>
-			
 	</footer>
-	<script type="text/javascript" ></script>
+	<script type="text/javascript" src="js/jQuery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="jswaypoints.min.js"></script>
+	<script type="text/javascript" src="js/myScript.js"></script>
+	<script type="text/javascript">
+		$('a.smoothScroll').smoothScroll({
+			offset: -80,
+			scrollTarget: $(this).val()
+		});
+	</script>
 </body>
 </html>

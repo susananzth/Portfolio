@@ -1,4 +1,9 @@
 @font-face {
+font-family: "Roboto-Mono";
+font-style: normal;
+src: local('RobotoMono-Light'), local('RobotoMono-Light'), url("../font/RobotoMono-Light.ttf")
+format('truetype');}
+@font-face {
   font-family: 'icomoon';
   src:  url('../font/icomoon.eot?j8k8mo');
   src:  url('../font/icomoon.eot?j8k8mo#iefix') format('embedded-opentype'),
@@ -9,6 +14,7 @@
   font-style: normal;
 }
 *{
+	font-family: Roboto-Mono;
 	margin: 0; padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -35,12 +41,27 @@ nav{
 	height: 3rem;
 	position: relative;
 }
+.fixed-nav {
+	width: 100%;
+	position: fixed;
+	top:0px;
+}
+a.current {
+	background-color: #222;
+}
 a{
 	text-decoration: none;
 	color: inherit;
 }
 .logo{
 	background: #fff;
+	height: 2rem;
+	left: 0.5rem;
+	position: absolute;
+	top: 0.5rem;
+	width: 2rem;
+}
+.logo img{
 	height: 2rem;
 	left: 0.5rem;
 	position: absolute;
@@ -102,11 +123,11 @@ article{
 	padding: 2rem;
 }
 .about-me{
-	background: #ecdee3;
+	background-color: #f5ecef;
+	/*background: #ecdee3;*/
 }
 .container-services{
 	margin: 0 auto;
-    margin-top: 1rem;
     width: 90%;
 }
 .services{
@@ -179,7 +200,8 @@ article{
 	/*vertical-align: top;*/
 }
 .skills{
-	background: #d6b5c1;
+	background: #ecdee3;
+	/*background: #d6b5c1;*/
 }
 .frontend, .backend{
 	border: #4c4c4c 1px solid;
@@ -248,7 +270,8 @@ article{
   color: #4479a1;
 }
 .tools-use{
-	background: #c39caa;
+	background: #e2c8d1;
+	/*background: #c39caa;*/
 }
 .tools{
 	margin: 0 auto;
@@ -341,18 +364,17 @@ textarea{
 }
 
 @media (min-width: 768px) {
-	header, article, footer{
+	header{
 		padding: 3rem;
 	}
-	.services:nth-child(odd){
-	padding-right: 1rem;
+	article{
+		padding: 3rem;
 	}
-	.services:nth-child(even){
-		padding-left: 1rem;
+	footer{
+		padding: 3rem;
 	}
-	.services:nth-child(3), .services:nth-child(4){
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+	.services{
+		padding: 1rem;
 	}
 	.preview{
 		width: 33.33%;
@@ -372,7 +394,11 @@ textarea{
 	body{
 		font-size: 20px;
 	}
-	header, article, footer{
+	header{
+		padding: 4rem 0 0 0;
+	}
+
+	article, footer{
 		padding: 4rem 5rem;
 	}
 	nav{
@@ -401,6 +427,9 @@ textarea{
 	}
 	h6{
 		font-size: 1.7rem;
+	}
+	.about-me{
+		padding: 0 0 4rem 0 !important;
 	}
 	.icons-me{
 		font-size: 4rem;
