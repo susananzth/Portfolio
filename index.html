@@ -3,46 +3,41 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="Description" content="Susana's portfolio, Web developer. I show you my frontend and backend jobs, my skills, the tools I use and the way to contact me."/>
+	<meta name="Description" content="Susana's portfolio, Front-end Web Developer. I show you my jobs, skills, the tools I use and the way to contact me."/>
 	<meta name="author" content="Susana Piñero"/>
-	<meta name="keywords" content="web developer, web design, frontend, backend, portfolio,"/>
+	<meta name="keywords" content="frontend web developer, web design, frontend, portfolio,"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-	<title>Susana's portfolio | FrontEnd & BackEnd Developer</title>
+	<title>Susana's portfolio | Front-end web Developer</title>
 	<link rel="stylesheet" type="text/css" href="css/myStyle.css"/>
 	<link rel="icon" type="text/css" href="img/favicon2.ico"/>
-	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.smooth-scroll.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/myScript.js"></script>
-    
 </head>
 <body>
 	<nav id="nav" class="nav">
-		<a href="#" class="smoothScroll">
+		<a href="#">
 			<figure class="logo">
 				<img src="img/icon.png"/>
 			</figure>
-			<span class="name">Susana Piñero</span>
+			<span id="name" class="name">Susana Piñero</span>
 		</a>
-		<span class="menu" onclick="openNav()"></span>
+		<span class="menubtn" onclick="openNav()"></span>
 
 		<div id="sideNav" class="sideNav">
 			<span class="closebtn" onclick="closeNav()"></span>
-			<div class="vertical">
+			<div class="menu">
 				<!--<a href="#">About</a> -->
 				<a href="#services">Services</a>
 				<a href="#skills">Skills</a>
 				<a href="#tools">Tools I use</a>
 				<a href="#contact">Contact</a>
 			</div>
-			
 		</div>
 
 	</nav>
 	<header>
 		<h1>Susana Piñero</h1>
-		<h5>Web/Mobile Developer</h5>
-		<!-- <a href="#portfolio" class="btn-to-portfolio">My portfolio</a> -->
+		<h5 class="subtitle">Front-end Web Developer</h5>
+		<!-- <h5>Web/Mobile Developer</h5>
+		<a href="#portfolio" class="btn-to-portfolio">My portfolio</a> -->
 	</header>
 	<section>
 		<article id="services" class="about-me pos">
@@ -203,18 +198,9 @@
 				<p title="Linkedin" class="icons-footer linkedin"> <a href=""></a></p>
 				<p title="Instagram" class="icons-footer instagram"> <a href=""></a></p>
 				-->
-				
 			</address>	
 		</div>
 	</footer>
-	<script>
-		function openNav() {
-	    document.getElementById("sideNav").style.width = "100%";
-	    }
-
-	    function closeNav() {
-	        document.getElementById("sideNav").style.width = "0";
-	    }
-	</script>
+	<script src="js/myScript.js"></script>
 </body>
 </html>
