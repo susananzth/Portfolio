@@ -63,16 +63,16 @@ a{
 }
 .logo img{
 	height: 2rem;
-	left: 0.5rem;
+	left: 0rem;
 	position: absolute;
-	top: 0.5rem;
+	top: 0rem;
 	width: 2rem;
 }
 .name{
-	font-size: 2rem;
+	font-size: 1.3rem;
 	left: 3rem;
 	position: absolute;
-	top: 0.5rem;
+	top: 0.85rem;
 }
 
 .menu{
@@ -92,6 +92,7 @@ a{
   content: "\ea0f";
   font-family: 'icomoon' !important;
   font-size: 1.5rem;
+  margin: 0 auto;
 }
 .sidenav {
     height: 100%;
@@ -100,7 +101,7 @@ a{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(226,200,200,0.8);
+    background-color: #f5ecef;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -118,12 +119,12 @@ a{
 }
 .sidenav .closebtn {
     position: absolute;
-    top: 1rem;
     right: 1rem;
+    top: 0.75rem;
 }
 header{
 	background-color: #f5ecef;
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 	text-align: center;
 }
 h1{
@@ -135,6 +136,7 @@ h5{
 }
 h6{
 	font-size: 1.3rem;
+	margin: 0.4rem 0;
 }
 h1, h5, h6{
 	font-weight: bold;
@@ -150,21 +152,21 @@ h1, h5, h6{
 	width: auto;
 }
 article{
-	padding: 2rem;
+	padding: 1rem 1rem 1.5rem 1rem;
 }
 .about-me{
 	background-color: #f5ecef;
 	/*background: #ecdee3;*/
+	padding: 0 1rem 1rem 1rem;
 }
 .container-services{
 	margin: 0 auto;
-	padding-top: 1.5rem;
     width: 90%;
 }
 .services{
-	padding: 1rem;
+	    padding: 0.4rem 1rem;
 	text-align: center;
-	width: 25%;
+	width: 50%;
 	vertical-align: top
 }
 /*
@@ -182,6 +184,7 @@ article{
 .services-love{
 	display: block;
 	margin: 0 auto;
+	margin-top: 0.4rem;
 	text-align: center;
 	width: 90%;
 	}
@@ -240,12 +243,8 @@ article{
 .frontend, .backend{
 	background: #fff;
 	margin: 0 auto;
-	margin-top: 1rem;
-	padding: 1rem;
+	padding: 0.5rem 1rem 1rem 1rem;
 	width: 90%;
-}
-.frontend{
-	margin-bottom: 1rem;
 }
 .frontend div figure, .backend div figure{
 	width: 30%;
@@ -310,7 +309,6 @@ article{
 .tools{
 	background: #fff;
 	margin: 0 auto;
-	margin-top: 1rem;
 	padding: 1.5rem;
 	width: 90%;
 }
@@ -334,7 +332,10 @@ article{
 footer{
 	background: #635c5e;
 	color: #fff;
-	padding: 2rem;
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+form{
+	margin-top: 0.5rem;
 }
 .form{
 	margin: 0 auto;
@@ -401,14 +402,14 @@ textarea{
 }
 
 @media (min-width: 768px) {
-	header{
+	header, article, footer{
 		padding: 3rem;
 	}
-	article{
-		padding: 3rem;
+	.about-me {
+	    padding: 0 3rem 3rem 3rem;
 	}
-	footer{
-		padding: 3rem;
+	.services {
+	    width: 25%;
 	}
 	.preview{
 		width: 33.33%;
@@ -438,6 +439,14 @@ textarea{
 	nav{
 		height: 4rem;
 	}
+	.logo{
+		height: 3rem;
+	    width: 3rem;
+	}
+	.logo img{
+		height: 3rem;
+	    width: 3rem;
+	}
 	.menu:before {
 		content: "\f0c9";
 		font-family: 'icomoon' !important;
@@ -450,8 +459,9 @@ textarea{
 		font-size: 2.5rem;
 	}
 	.name{
-		font-size: 3rem;
-    	left: 4rem;
+		font-size: 2rem;
+	    left: 4rem;
+	    top: 1rem;
 	}
 	h1{
 		font-size: 4.5rem;
@@ -468,6 +478,9 @@ textarea{
 	.icons-me{
 		font-size: 4rem;
 	}
+	.frontend div figure, .backend div figure{
+    	width: 20%;
+    }
 	.icons-skills{
 		font-size: 4rem;
 	}
